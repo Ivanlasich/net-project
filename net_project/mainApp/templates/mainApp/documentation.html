@@ -1,0 +1,19 @@
+{% extends "mainApp/wrapper.html" %}
+
+{% block title %}Документация{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Документация</h1>
+    <p>Для публикации статьи необходимо заполнить следущие обязательные поля:</p>
+    <table cellpadding="8" cellspacing="4">
+        <tr><th bgcolor="#00FFFF">поле 1</th><th bgcolor="#00FFFF">поле 2</th><th bgcolor="#00FFFF">поле 3</th><th bgcolor="#00FFFF">поле 4</th></tr>
+        <tr><td>Название статьи</td><td>Анонс статьи</td><td>Текст статьи</td><td>Дата публикации</td></tr>
+    </table>
+
+    <p>Для просмотра опубликованных статей передите по вкладке "Новости" в навигации сайта. Статьи также можно удалять и править.</p>
+    <p>Попробуйте сами опубликовать статью, это очень легко!</p>
+    <a href="{% url 'create' %}" class="btn btn-info">Добавить запись</a>
+
+</div>
+{% endblock %}
